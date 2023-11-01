@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat App</title>
+    <link rel="stylesheet" href="./style.css">
+    
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div>
+                <h1>Shunya.EK</h1>
+            </div>
+            <div class="profile">
+                <div>
+                    <div>Niraj kumar</div>
+                </div>
+            </div>
+            <div class="settings-dropdown">
+                <button class="settings-button" onclick="toggleSettingsMenu()">Chat Settings</button>
+                <div id="settingsMenu" class="settings-menu">
+                    <a href="#">Mute</a>
+                    <a href="#">Block</a>
+                    <a href="#">Leave Chat</a>
+                </div>
+            </div>
+            <div class="current-user-profile">
+                <!-- <a href="#" onclick="viewUserProfile()">Edit Profile</a> -->
+
+             <a href="#" onclick="viewUserProfile()">   
+                 <div class="profile">
+                    <img src="./niraj.jpg" alt="User Profile Picture">
+                </div>
+            </a>
+        
+        </div>
+        </header>
+
+        <div class="message-area">
+            <div class="chat-bubble">
+                This is a chat message.
+                <span class="timestamp" title="2023-10-31T12:34:56">12:34 PM</span>
+                <span class="read-receipt" title="Read by User1">Read</span>
+            </div>
+            <div class="chat-bubble">
+                Another chat message.
+                <span class="timestamp" title="2023-10-31T12:36:22">12:36 PM</span>
+                <span class="read-receipt" title="Sent">Sent</span>
+            </div>
+            <div class="typing-indicator">
+                User2 is typing...
+            </div>
+        </div>
+
+        <div class="input-area">
+            <textarea class="text-input" placeholder="Type your message"></textarea>
+            <button class="send-button" onclick="sendMessage()">Send</button>
+            <input type="file" id="fileInput" class="attachment-options">
+            <div class="emoji-picker">
+                <!-- Emoji picker content goes here -->
+            </div>
+        </div>
+    </div>
+
+</body>
+
+ <script src="./script.js"></script>
+</html>
